@@ -1,0 +1,12 @@
+{
+  "defaultCurrency": "USD",
+  "timeFormat": "24H",
+  "maxConnections": 3,
+  "language": "EN",
+  "autoSaveInterval": 5,
+  "enableLogs": true,
+  "theme": "dark",
+  "region": "CENTRAL",
+  "backupEnabled": false,
+  "backupDirectory": "./respaldo"
+}
