@@ -1,0 +1,20 @@
+
+Este proyecto se aplica el uso del **patrón de diseño Singleton** mediante una aplicación Java que administra una configuración global cargada desde un archivo externo (`config.json`). La configuración puede visualizarse y modificarse tanto desde la MAIN como Main Gui
+
+Para correr el proyecto es necesario tener varias librerias.
+Java.io
+Java.swing
+Java Util
+Java Time
+Para la estructura del codigo se utilizo maven, para tener una buena organizacion, ya que se pueden hacer tests unitarios y la descarga automatica de bibliotecas
+### ✅ Requisitos previos
+
+- Java 8 o superior
+- Un entorno como IntelliJ (El que se uso) IDEA o cualquier terminal con `javac` y `java`
+
+---
+Para ejecutar en Condola debes correr Main y para ejecutarlo en Interfaz debes ejecutar MainGUI
+El proyecto funciona de igual forma para la consola como la intrfaz. Ambos utilizan config.jason para trabajar y lo modifican en tiempo real mientras la app corre, viendo los cambios de inmediato.
+Las clases Idioma, ConfigData, ConfigCommandHandler las utilizan tanto Main como MainGUI ya que son la base del proyecto. Idioma se encarga de tomar el idioma actual y modificarlo a espanol o ingles, este posee todos los strings con los distintos idiomas.
+ConfigData define los valores del config.json y CommandHandler es el que envia comandos para logar la funcionalidad de la app y guardar los datos cambiados.
+Para simular las conexiones se separan en Main que ejecuta en consola y el GUI para verlo en interfaz. Cada funcion principal esta dividida y tiene su clase respectiva. WellcomeScreen, Idioma, Simulador de conexiones, etc...
